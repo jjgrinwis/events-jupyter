@@ -11,33 +11,33 @@ This project contains a Jupyter notebook for querying Akamai Event Viewer API da
 
 Install uv if needed:
 
-- macOS: brew install uv
-- Windows (PowerShell): powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-- Linux/macOS (alternative): curl -LsSf https://astral.sh/uv/install.sh | sh
+- macOS: `brew install uv`
+- Windows (PowerShell): `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex`"
+- Linux/macOS (alternative): `curl -LsSf https://astral.sh/uv/install.sh | sh`
 
 ## Clone the project
 
 1. Clone the repository:
-   git clone <your-repo-url>
+   `git clone https://github.com/jjgrinwis/events-jupyter`
 2. Enter the project folder:
-   cd events-jupyter
+   `cd events-jupyter`
 
 ## Set up with uv
 
 1. Create the environment and install dependencies:
-   uv sync
+   `uv sync`
 
 2. (Optional) Set the EdgeGrid section if not using default:
-   export AKAMAI_EDGEGRID_SECTION="gss"
+   `export AKAMAI_EDGEGRID_SECTION="some_section"`
 
 3. (Optional) Set account switch key when needed:
-   export AKAMAI_ACCOUNT_SWITCH_KEY="1-2345:A-BCDE"
+   `export AKAMAI_ACCOUNT_SWITCH_KEY="1-2345:A-BCDE"`
 
 ## Run the notebook
 
 Start Jupyter Lab through uv:
 
-uv run jupyter lab event-vieuwer.ipynb
+`uv run jupyter lab event-vieuwer.ipynb`
 
 Then run the notebook cells from top to bottom.
 
